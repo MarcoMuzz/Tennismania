@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Tornei del Circuito ATP</title>
+
+
+    <link href="../../assets/img/favicon.ico" rel="icon">
+
+    <link href="../../assets/bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/bootstrap/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="header">
+
+        <div class="d-flex flex-column" style="margin-top:10%;">
+
+            <div class="profile">
+                <img src="../../assets/img/logotrasparente2.png" alt="">
+
+            </div>
+
+            <nav id="navbar" class="nav-menu">
+                <ul>
+                    <li><a href="../Homepage.html" class="nav-link "> <span><b>Home</b></span></a></li>
+                    <li><a href="../Regolamento/Regolamento.html" class="nav-link"> <span><b>Regolamento</b></span></a>
+                    </li>
+                    <li><a href="../Tornei Importanti/Tornei Importanti.html" class="nav-link active"> <span><b>Tornei
+                                    Importanti</b></span></a></li>
+                    <li><a href="../Colpi Fondamentali/Colpi Fondamentali.html" class="nav-link"> <span><b>Colpi
+                                    Fondamentali</b></span></a></li>
+                    <li><a href="../Quiz/Quiz.html" class="nav-link"> <span><b>Quiz</b></span></a></li>
+                    <li><a class="nav-link" onclick="aiuto()"><span><b>Aiuto</b></span></a></li>
+                    <li><a class="nav-link" onclick="chi_siamo()"><span><b>Chi siamo</b></span></a></li>
+                    <li><a class="nav-link" onclick="mappa_atp()"><span><b>Mappa</b></span></a></li>
+                    <li><a class="nav-link" onclick="esci()"><span><b>Esci</b></span></a></li>
+                </ul>
+                <footer>
+                    <div>Copyright © 2021 - TennisMania</div>
+                </footer>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+
+
+        <div class="big-container">
+            <div class="breadcrumbs">
+                <div class="container">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2><b>Tornei del Circuito ATP</b></h2>
+
+                        <button type="button" id="audiobtn" onclick="backmusic();">
+                            <i id="backgroundmusic" class="fa fa-play"></i>
+                            <audio loop="" id="audio">
+                                <source src="../../assets/js/backgroundmusic.mp3" type="audio/mpeg">
+                                Il tuo browser non supporta HTML5
+                            </audio>
+                        </button>
+                        <ol>
+                            <li><a href="Tornei Importanti.html">Tornei Importanti</a></li>
+                            <li>> Tornei del Circuito ATP</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+            <div class="content">
+
+                <div class="containercurvo">
+
+                    <img id="imgpag" src="../../assets/img/Tornei Importanti/TorneidelCircuitoATP600x375.jpg"
+                        style="float:right;margin-top: 2%;margin-left:1%; border-radius: 25px;">
+                    <p style="margin-top: 2%;">Oltre ai <a href="Grande Slam.html">tornei di tennis del Grande Slam</a>,
+                        ci sono altre competizioni che gli sportivi
+                        giocano a livello internazionale. Per gli uomini ci sono i <b>Masters 1000</b>, i <b>Masters
+                            500</b>, i <b>Masters 250</b>, i <b>Challenger</b> e <b>l’ATP World Tour Finals</b>,
+                        l’ultimo grande evento della stagione. </p>
+                    <p><b>Masters 1000</b>: consentono ai vincitori di accumulare 1.000 punti per il <b>ranking ATP</b>.
+                        Ogni anno ne vengono disputati nove: tre negli USA, due in Francia, uno in Italia, Spagna,
+                        Canada e
+                        Cina. Le competizioni si tengono su campi di <b>cemento o in terra rossa</b>.</p>
+                    <p><b>Masters 500</b>: assicurano 500 punti per il ranking ATP e si giocano su differenti superfici.
+                        Ne
+                        vengono tredici e ci sono dai 32 ai 48 atleti.</p>
+                    <p><b>Masters 250</b>: ci sono 40 tornei di tennis di questo tipo che si svolgono annualmente e
+                        fanno
+                        ottenere ai vincitori 250 punti. Le sedi delle competizioni si trovano in Europa, in Asia, in
+                        Sud
+                        America e in Africa e si giocano su cemento, <b>erba e terra rossa</b>, sia <b>outdoor che
+                            indoor</b>.</p>
+                    <p><b>All’ATP World Tour Finals</b> prendono parte i migliori otto professionisti del ranking
+                        internazionale ed è uno dei tornei di tennis più prestigiosi e importanti al mondo. Le gare
+                        vengono combattute <b>nell’O2 Arena di Londra</b>.</p>
+                    <p>I tornei di tornei per le donne sono due: <b>WTA Premiere e WTA International</b>.
+                        <b>WTA Premiere</b>, si gioca negli USA, in Spagna, in Cina, in Quatar, in Italia e in Canada.
+                        Vengono disputate venti competizioni, quattro delle quali sono obbligatorie, mentre le altre
+                        hanno un montepremi inferiore e sono meno rilevanti.
+                        <b>WTA International</b>, è composta da 35 eventi e le tenniste ammesse a ogni competizione sono
+                        32. Si gioca su ogni tipo di superficie sia all’aperto che al coperto. Alla fine della stagione
+                        viene organizzato in Cina un torneo chiamato <b>WTA Elite Trophy</b> con un montepremi che supera i 2
+                        milioni di dollari.
+                    </p>
+
+
+
+                </div>
+
+
+
+
+
+                <div class="buttons-container">
+                    <div class="first-column">
+                        <button type="button" id="back-topic" class="btn" onclick="location.href='Grande slam.html';">
+                            Tornei del Grande Slam
+                        </button>
+                    </div>
+                    <div class="third-column">
+                        <button type="button" id="next-topic" class="btn"
+                            onclick="location.href='../colpi fondamentali/colpi fondamentali.html';">
+                            Colpi Fondamentali
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <!-- comandi da tastiera -->
+    <script>
+        window.addEventListener("keydown", checkKeyPress, false);
+        function checkKeyPress(key) {
+            /*freccetta destra*/
+            if (key.keyCode == "39") {
+                window.open("../colpi fondamentali/colpi fondamentali.html", "_self");
+            }
+            /*Freccetta Sinistra*/
+            if (key.keyCode == "37") {
+                window.open("Grande Slam.html", "_self");
+            }
+            /*Lettera H*/
+            if (key.keyCode == "72") {
+                window.open("../homepage.html", "_self");
+            }
+            /*Lettera Q*/
+            if (key.keyCode == "81") {
+                window.open("../quiz/quiz.html", "_self");
+            }
+
+            /*Lettera R*/
+            if (key.keyCode == "82") {
+                window.open("../regolamento/Regolamento.html", "_self");
+            }
+
+            /*Lettera C*/
+            if (key.keyCode == "67") {
+                window.open("../colpi fondamentali/colpi fondamentali.html", "_self");
+            }
+            /*Lettera T*/
+            if (key.keyCode == "84") {
+                window.open("tornei importanti.html", "_self");
+            }
+
+            /*Lettera M*/
+            if (key.keyCode == "77") {
+                mappa_atp();
+            }
+            /*Lettera P*/
+            if (key.keyCode == "80") {
+                chi_siamo();
+            }
+
+        }
+    </script>
+
+    <script src="../../assets/bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/popups.js"></script>
+    <script src="../../assets/js/Sweetalert/dist/sweetalert2.all.min.js"></script>
+    <script src="../../assets/js/Musica.js"></script>
+
+
+</body>
+
+</html>

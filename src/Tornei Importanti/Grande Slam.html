@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Tornei del Grande Slam</title>
+
+
+    <link href="../../assets/img/favicon.ico" rel="icon">
+
+    <link href="../../assets/bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/bootstrap/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="header">
+
+        <div class="d-flex flex-column" style="margin-top:10%;">
+
+            <div class="profile">
+                <img src="../../assets/img/logotrasparente2.png" alt="">
+
+            </div>
+
+            <nav id="navbar" class="nav-menu">
+                <ul>
+                    <li><a href="../Homepage.html" class="nav-link "> <span><b>Home</b></span></a></li>
+                    <li><a href="../Regolamento/Regolamento.html" class="nav-link"> <span><b>Regolamento</b></span></a>
+                    </li>
+                    <li><a href="../Tornei Importanti/Tornei Importanti.html" class="nav-link active"> <span><b>Tornei
+                                    Importanti</b></span></a></li>
+                    <li><a href="../Colpi Fondamentali/Colpi Fondamentali.html" class="nav-link"> <span><b>Colpi
+                                    Fondamentali</b></span></a></li>
+                    <li><a href="../Quiz/Quiz.html" class="nav-link"> <span><b>Quiz</b></span></a></li>
+                    <li><a class="nav-link" onclick="aiuto()"><span><b>Aiuto</b></span></a></li>
+                    <li><a class="nav-link" onclick="chi_siamo()"><span><b>Chi siamo</b></span></a></li>
+                    <li><a class="nav-link" onclick="mappa_grandeslam()"><span><b>Mappa</b></span></a></li>
+                    <li><a class="nav-link" onclick="esci()"><span><b>Esci</b></span></a></li>
+                </ul>
+                <footer>
+                    <div>Copyright © 2021 - TennisMania</div>
+                </footer>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+
+
+        <div class="big-container">
+            <div class="breadcrumbs">
+                <div class="container">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2><b>Tornei del Grande Slam</b></h2>
+
+                        <button type="button" id="audiobtn" onclick="backmusic();">
+                            <i id="backgroundmusic" class="fa fa-play"></i>
+                            <audio loop="" id="audio">
+                                <source src="../../assets/js/backgroundmusic.mp3" type="audio/mpeg">
+                                Il tuo browser non supporta HTML5
+                            </audio>
+                        </button>
+                        <ol>
+                            <li><a href="Tornei Importanti.html">Tornei Importanti</a></li>
+                            <li>> Tornei del Grande Slam</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+            <div class="content">
+
+                <div class="containercurvo">
+
+                    <img id="imgpag" src="../../assets/img/Tornei Importanti/GrandeSlam600x375.jpg"
+                        style="float:right;margin-top: 2%;margin-left:1%; border-radius: 25px;">
+                    <p style="margin-top: 2%;"><b>I tornei di tennis del Grande Slam</b> sono i più importanti tra le
+                        gare a cui i tennisti internazionali partecipano e non solo dal punto di vista dei punti
+                        assegnati a ogni giocatore, sono ben 200, sia dal punto di vista del valore economico dei premi
+                        ricevuti dai vincitori. Sono quattro e si dividono in:</p>
+                    <p><b>Australian Open</b>:Chiamato anche <b>Happy Slam</b> è il primo dei quattro
+                        tornei annuali di tennis del
+                        Grande Slam, che si tiene ogni anno a <b>Melbourne</b> in Australia durante la terza e la quarta
+                        settimana di gennaio. Inizialmente disputato sui campi d'erba di Kooyong il torneo rischiò di
+                        scadere nell'irrilevanza, ma venne rivitalizzato negli anni ottanta con lo
+                        spostamento a Melbourne Park, e la superficie dei nuovi campi che diventa così il
+                        <b>cemento.</b>
+                    </p>
+                    <p><b>Open di Francia</b>, o <b>Roland Garros</b>: è il secondo dei tornei del Grande Slam in ordine
+                        cronologico, tenendosi da metà maggio all'inizio di giugno a <b>Parigi</b> in Francia.
+                        Si svolge nello Stade Roland Garros, impianto intitolato all'omonimo aviatore dell'aeronautica
+                        francese nella Prima guerra mondiale; la superficie di gioco è la <b>terra battuta</b>: è il
+                        solo
+                        torneo del Grande Slam che si svolge su questa superficie dopo l'abbandono della terra verde
+                        (Har-Tru) dallo US Open del 1978.</p>
+                    <p><b>Wimbledon</b>:E' il più antico evento nello sport del tennis. Terzo torneo del Grande Slam in
+                        ordine cronologico annuale,
+                        preceduto dall'Australian Open e dagli Open di Francia e seguito dagli US Open, è l'unico Slam
+                        ad essere giocato sull'<b>erba</b>. Si tiene annualmente tra giugno e luglio presso il <b>sobborgo
+                        londinese di Wimbledon</b>.</p>
+                    <p> <b>US Open</b>: è il quarto e ultimo dei tornei di tennis del Grande Slam, tenendosi tra agosto e
+                        settembre, dal 1978 sui campi in <b>DecoTurf</b> di Flushing Meadows a <b>New York</b>.</p>
+
+
+
+                </div>
+
+
+
+
+
+                <div class="buttons-container">
+                    <div class="first-column">
+                        <button type="button" id="back-topic" class="btn"
+                            onclick="location.href='Tornei importanti.html';">
+                            Tornei Importanti
+                        </button>
+                    </div>
+                    <div class="third-column">
+                        <button type="button" id="next-topic" class="btn" onclick="location.href='tornei atp.html';">
+                            Tornei del Circuito ATP
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <!-- comandi da tastiera -->
+    <script>
+        window.addEventListener("keydown", checkKeyPress, false);
+        function checkKeyPress(key) {
+            /*freccetta destra*/
+            if (key.keyCode == "39") {
+                window.open("tornei atp.html", "_self");
+            }
+            /*Freccetta Sinistra*/
+            if (key.keyCode == "37") {
+                window.open("Tornei importanti.html", "_self");
+            }
+            /*Lettera H*/
+            if (key.keyCode == "72") {
+                window.open("../homepage.html", "_self");
+            }
+            /*Lettera Q*/
+            if (key.keyCode == "81") {
+                window.open("../quiz/quiz.html", "_self");
+            }
+
+            /*Lettera R*/
+            if (key.keyCode == "82") {
+                window.open("../regolamento/Regolamento.html", "_self");
+            }
+
+            /*Lettera C*/
+            if (key.keyCode == "67") {
+                window.open("../colpi fondamentali/colpi fondamentali.html", "_self");
+            }
+            /*Lettera T*/
+            if (key.keyCode == "84") {
+                window.open("tornei importanti.html", "_self");
+            }
+
+            /*Lettera M*/
+            if (key.keyCode == "77") {
+                mappa_grandeslam();
+            }
+            /*Lettera P*/
+            if (key.keyCode == "80") {
+                chi_siamo();
+            }
+
+        }
+    </script>
+
+    <script src="../../assets/bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/popups.js"></script>
+    <script src="../../assets/js/Sweetalert/dist/sweetalert2.all.min.js"></script>
+    <script src="../../assets/js/Musica.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TennisMania</title>
+
+
+  <link href="assets/img/favicon.ico" rel="icon">
+
+  <link href="../assets/bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/bootstrap/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+<link href="assets/css/style.css" rel="stylesheet">
+<style>
+
+.btn.start-button {
+	border-radius: 130px;
+  text-align: center;
+  line-height: inherit;
+	float: center;
+	margin: 0 0 0 12px;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  
+}
+
+video {
+  max-width: 120%;
+  max-height: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#landingvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+body{background:black;
+  background-image:none;
+overflow:hidden;}
+
+.landing {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  min-width: 100%;
+  min-height: 100%;
+}
+.landing-img{
+  	color: #d4d4d4;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+  height: 30vh;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.landing img{
+	width:50%;
+}
+
+
+
+
+</style>
+</head>
+
+<body onload="messaggio_Entrata()">
+
+  
+  
+        <video autoplay loop muted width="100%" id="landingvideo">
+          <source type="video/mp4" src="assets/video/landing.mp4">
+        </video>
+
+        <div class="landing">
+          <div class="landing-img">
+        <img src="assets/img/logotrasparente.PNG" alt="logo">
+         <div style="PADDING-top:5%">
+      </div>
+    <button type="button"  onclick="location.href='src/homepage.html'" class="btn start-button" style="width:10vw; height:3vw; font-family:varela;font-size:1.3vw;background-color: #e66e1b; color:#ffdfb5;text-shadow: 1px 1px 1px #000000 ;">
+      Inizia
+    </button>
+    <div>
+              
+  </div>
+  <script src="assets/bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/popups.js"></script>
+  <script src="assets/js/Sweetalert/dist/sweetalert2.all.min.js"></script>
+
+</body>
+
+</html>

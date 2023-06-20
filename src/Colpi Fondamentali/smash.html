@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Lo Smash</title>
+
+
+    <link href="../../assets/img/favicon.ico" rel="icon">
+
+    <link href="../../assets/bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/bootstrap/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+
+        <div class="d-flex flex-column" style="margin-top:10%;">
+
+            <div class="profile">
+                <img src="../../assets/img/logotrasparente2.png" alt="">
+
+            </div>
+
+            <nav id="navbar" class="nav-menu">
+                <ul>
+                    <li><a href="../Homepage.html" class="nav-link "> <span><b>Home</b></span></a></li>
+                    <li><a href="../Regolamento/Regolamento.html" class="nav-link"> <span><b>Regolamento</b></span></a>
+                    </li>
+                    <li><a href="../Tornei Importanti/Tornei Importanti.html" class="nav-link"> <span><b>Tornei
+                                    Importanti</b></span></a></li>
+                    <li><a href="../Colpi Fondamentali/Colpi Fondamentali.html" class="nav-link active"> <span><b>Colpi
+                                    Fondamentali</b></span></a></li>
+                    <li><a href="../Quiz/Quiz.html" class="nav-link"> <span><b>Quiz</b></span></a></li>
+                    <li><a class="nav-link" onclick="aiuto()"><span><b>Aiuto</b></span></a></li>
+                    <li><a class="nav-link" onclick="chi_siamo()"><span><b>Chi siamo</b></span></a></li>
+                    <li><a class="nav-link" onclick="mappa_smash()"><span><b>Mappa</b></span></a></li>
+                    <li><a class="nav-link" onclick="esci()"><span><b>Esci</b></span></a></li>
+                </ul>
+                <footer>
+                    Copyright © 2021 - TennisMania
+                </footer>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+
+
+        <div class="big-container">
+            <div class="breadcrumbs">
+                <div class="container">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2><b>Lo Smash</b></h2>
+
+                        <button type="button" id="audiobtn" onclick="backmusic();">
+                            <i id="backgroundmusic" class="fa fa-play"></i>
+                            <audio loop="" id="audio">
+                                <source src="../../assets/js/backgroundmusic.mp3" type="audio/mpeg">
+                                Il tuo browser non supporta HTML5
+                            </audio>
+                        </button>
+                        <ol>
+                            <li><a href="Colpi Fondamentali.html">Colpi Fondamentali</a></li>
+                            <li>> Lo Smash</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+            <div class="content">
+
+                <div class="containercurvo">
+                    <video id="colpi" controls>
+                        <source src="../../assets/video/smash.mp4" type="video/mp4">
+                        Il Tuo browser non supporta il video.
+                    </video>
+                    <p style="margin-top: 5%;"><b>LO SMASH</b> Lo smash si gioca a conclusione di uno scambio offensivo nel quale, mettendo in
+                        difficoltà l’avversario, si conquista la rete, costringendolo a giocare un pallonetto difensivo.
+                        Può sembrare relativamente semplice, in realtà è un’esecuzione molto tecnica, si gioca al volo o
+                        dopo un rimbalzo, rivelandosi spesso un colpo vincente, molto utilizzato nel <a href="../Tornei Importanti/Tornei ATP.html">circuito ATP</a>.<br><br> </p>
+                        <p>Il movimento è simile a quello del <a href="Servizio.html">servizio</a>, con la differenza che la traiettoria della palla
+                            dipende dal colpo dell’avversario. Per una corretta esecuzione, sono determinanti la posizione
+                            ottimale, una buona capacità nella ricerca della palla e la percezione dell’altezza. Lo Smash è
+                            fondamentalmente la risposta a un <b>pallonetto</b>.<br><br></p>
+                        <p> L’impugnatura utilizzata per i colpi al
+                        volo è la <b>Continental</b>, permette d’impattare la palla con un movimento più lineare e di
+                        avere la racchetta già in posizione aperta per meglio controllare la palla. È giocabile in
+                        qualsiasi zona del campo, nella maggior parte dei casi avviene in prossimità della rete, quindi
+                        nella parte anteriore del campo. In teoria l’esecuzione diventa più semplice quando si è vicini
+                        alla rete, perché l’angolo di tiro è più ripido, mentre diventa più piatto, di conseguenza
+                        complicato, indietreggiando.</p>
+                    
+                   
+
+
+
+
+
+                </div>
+
+
+
+
+
+                <div class="buttons-container">
+                    <div class="first-column">
+                        <button type="button" id="back-topic" class="btn" onclick="location.href='volee.html';">
+                            La volee
+                        </button>
+                    </div>
+                    <div class="third-column">
+                        <button type="button" id="next-topic" class="btn" onclick="location.href='lob.html';">
+                            Il Lob
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <!-- comandi da tastiera -->
+    <script>
+        window.addEventListener("keydown", checkKeyPress, false);
+        function checkKeyPress(key) {
+            /*freccetta destra*/
+            if (key.keyCode == "39") {
+                window.open("lob.html", "_self");
+            }
+            /*Freccetta Sinistra*/
+            if (key.keyCode == "37") {
+                window.open("volee.html", "_self");
+            }
+            /*Lettera H*/
+            if (key.keyCode == "72") {
+                window.open("../homepage.html", "_self");
+            }
+            /*Lettera Q*/
+            if (key.keyCode == "81") {
+                window.open("../quiz/quiz.html", "_self");
+            }
+
+            /*Lettera R*/
+            if (key.keyCode == "82") {
+                window.open("../regolamento/Regolamento.html", "_self");
+            }
+
+            /*Lettera C*/
+            if (key.keyCode == "67") {
+                window.open("colpi fondamentali.html", "_self");
+            }
+            /*Lettera T*/
+            if (key.keyCode == "84") {
+                window.open("../tornei importanti/tornei importanti.html", "_self");
+            }
+
+            /*Lettera M*/
+            if (key.keyCode == "77") {
+                mappa_smash();
+            }
+            /*Lettera P*/
+            if (key.keyCode == "80") {
+                chi_siamo();
+            }
+
+        }
+    </script>
+    <script src="../../assets/bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/popups.js"></script>
+   <script src="../../assets/js/Sweetalert/dist/sweetalert2.all.min.js"></script>
+   <script src="../../assets/js/Musica.js"></script>
+
+
+
+</body>
+
+</html>

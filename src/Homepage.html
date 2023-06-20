@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TennisMania-Homepage</title>
+
+
+  <link href="../assets/img/favicon.ico" rel="icon">
+
+
+  <link href="../assets/bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/bootstrap/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+
+    <div class="d-flex flex-column" style="margin-top:10%;">
+
+      <div class="profile">
+        <img src="../assets/img/logotrasparente2.png" alt="">
+
+      </div>
+
+      <nav id="navbar" class="nav-menu">
+        <ul>
+          <li><a href="Homepage.html" class="nav-link active"> <span><b>Home</b></span></a></li>
+          <li><a href="../src/Regolamento/Regolamento.html" class="nav-link"> <span><b>Regolamento</b></span></a></li>
+          <li><a href="../src/Tornei Importanti/Tornei Importanti.html" class="nav-link"> <span><b>Tornei
+                  Importanti</b></span></a></li>
+          <li><a href="../src/Colpi Fondamentali/Colpi Fondamentali.html" class="nav-link"> <span><b>Colpi
+                  Fondamentali</b></span></a></li>
+          <li><a href="../src/Quiz/Quiz.html" class="nav-link"> <span><b>Quiz</b></span></a></li>
+          <li><a class="nav-link" onclick="aiutohome()"><span><b>Aiuto</b></span></a></li>
+          <li><a class="nav-link" onclick="chi_siamohome()"><span><b>Chi siamo</b></span></a></li>
+          <li><a class="nav-link" onclick="mappa_home()"><span><b>Mappa</b></span></a></li>
+          <li><a class="nav-link" onclick="esci()"><span><b>Esci</b></span></a></li>
+        </ul>
+        <footer>
+          <div>Copyright © 2021 - TennisMania</div>
+        </footer>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main id="main">
+
+
+    <div class="big-container">
+      <div class="breadcrumbs">
+        <div class="container">
+
+          <div class="d-flex justify-content-between align-items-center">
+            <h2><b>TennisMania - Homepage</b></h2>
+
+            <button type="button" id="audiobtn" onclick="backmusic();">
+              <i id="backgroundmusic" class="fa fa-play"></i>
+              <audio loop="" id="audio">
+                <source src="../assets/js/backgroundmusic.mp3" type="audio/mpeg">
+                Il tuo browser non supporta HTML5
+              </audio>
+            </button>
+            <ol>
+              <li></li>
+              <li>> Home</li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+      <div class="content">
+
+        <div class="containercurvo">
+          <p style="text-align: justify;"><br>Il <b>tennis</b> è uno sport <b>aerobico</b> – anaerobico alternato,
+            soddisfa tutte le caratteristiche di cui un corpo umano ha bisogno per svilupparsi e mantenersi in salute.È
+            <b>educativo</b> dal punto di vista comportamentale, con le numerose regole da seguire induce
+            <b>disciplina</b> e rispetto</b> dell’avversario. Molto indicato per favorire il <b>benessere</b> del
+            sistema cardiovascolare, migliora la coordinazione, apporta benefici alla pressione sanguigna e riduce il
+            rischio di patologie dell’apparato cardio-circolatorio, con effetti anche sulle calorie bruciate durante una
+            sessione di allenamento.
+          </p>
+          <p style="text-align: justify;">
+            Nel tennis è fondamentale la <b>preparazione atletica</b>, che rappresenta una componente fondamentale
+            nell’allenamento. È importante lavorare sulla mobilità articolare, sulla forza, sulla resistenza e sulla
+            velocità, imprescindibili per una prestazione soddisfacente.
+            <br>
+          </p>
+
+          <p style="text-align: justify;">
+            Richiede, quindi, una grandissima quantità di <b>energie fisiche</b> e <b>mentali</b>. La pratica di questo
+            sport comporta una <b>dedizione costante</b> e duratura negli anni, che spesso porta gli atleti sin dalla
+            giovane età a trascorrere la maggioranza del proprio tempo in campo. È, inoltre, estremamente utile per
+            sviluppare l’abilità di risolvere problemi, cercare soluzioni e sviluppare quindi uno spirito critico e
+            acuto nei confronti di situazioni che spesso possono apparire sopraffacenti. Per questi motivi, la
+            disciplina è l’aspetto centrale di questo sport.
+          </p>
+
+          <ul id="rig" style="bottom:0px;position: absolute; align-items:center;">
+
+            <li>
+              <a class="rig-cell" style="margin:7px;" href="../src/Regolamento/Regolamento.html">
+                <img class="rig-img" src="../assets/img/homepage/homepage_regolamento.jpg" alt="Regolamento">
+                <span class="rig-overlay"></span>
+                <span class="rig-text">Regolamento</span>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="rig-cell" style="margin:7px;" href="../src/Tornei Importanti/Tornei Importanti.html">
+                <img class="rig-img" src="../assets/img/homepage/homepage_tornei.jpg" alt="Tornei">
+                <span class="rig-overlay"></span>
+                <span class="rig-text">Tornei Importanti</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="rig-cell" style="margin:7px;" href="../src/Colpi Fondamentali/Colpi Fondamentali.html">
+                <img class=" rig-img" src="../assets/img/homepage/homepage_colpi.jpg" alt="Colpi Fondamentali">
+                <span class="rig-overlay"></span>
+                <span class="rig-text">Colpi Fondamentali</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+
+        <div class="buttons-container">
+          <div class="second-column">
+            <button type="button" id="next-topic" class="btn"
+              onclick="location.href='../src/Regolamento/Regolamento.html';">
+              Iniziamo!
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <!-- comandi da tastiera -->
+  <script>
+    window.addEventListener("keydown", checkKeyPress, false);
+    function checkKeyPress(key) {
+      /*freccetta destra*/
+      if (key.keyCode == "39") {
+        window.open("../src/Regolamento/Regolamento.html", "_self");
+      }
+      /*Lettera Q*/
+      if (key.keyCode == "81") {
+        window.open("../src/quiz/quiz.html", "_self");
+      }
+      /*Lettera R*/
+      if (key.keyCode == "82") {
+        window.open("../src/regolamento/Regolamento.html", "_self");
+      }
+      /*Lettera C*/
+      if (key.keyCode == "67") {
+        window.open("../src/colpi fondamentali/colpi fondamentali.html", "_self");
+      }
+      /*Lettera T*/
+      if (key.keyCode == "84") {
+        window.open("../src/tornei importanti/tornei importanti.html", "_self");
+      }
+
+      /*Lettera M*/
+      if (key.keyCode == "77") {
+        mappa_home();
+      }
+
+
+      /*Lettera P*/
+      if (key.keyCode == "80") {
+        chi_siamohome();
+      }
+
+
+    }
+  </script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/popups.js"></script>
+  <script src="../assets/js/Sweetalert/dist/sweetalert2.all.min.js"></script>
+  <script src="../assets/js/Musica.js"></script>
+
+
+</body>
+
+</html>
